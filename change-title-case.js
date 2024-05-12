@@ -15,3 +15,6 @@ for(let ele in arr1){
     arr1[ele] = newEle;
 }
 console.log(arr1.join(" "))
+
+
+console.log('pinki')
