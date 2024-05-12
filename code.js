@@ -1004,3 +1004,169 @@
 // }
 
 // console.log(factorialFunc(parseInt(prompt("Enter the Number: "))));
+
+// ******************************
+// let name = prompt("What is your name? ");
+// console.log("Hello, " + name + "!");
+// console.log("Hello pinki")
+
+
+// let num = Math.floor(7/3)
+// console.log(num);
+
+// let num = input.question();
+// console.log(num);
+
+
+//   setInterval, and cleanInterval      ##################
+// var divTrigger = document.getElementById('testDiv');
+// var a = 0;
+// var aminy = setInterval(trigger,1000);
+// function trigger(){
+//     a+=10;
+//     if(a==100){
+//         clearInterval(aminy);
+//     }else{
+
+//         divTrigger.style.marginLeft = a+'px';
+//         divTrigger.style.borderRadius = a+'%';
+//     }
+
+    
+    
+// }
+
+
+
+
+
+
+// const pro = ()=>{
+//     let promise1 = new Promise((resolve,reject)=>{
+//         let api = 'https://jsonplaceholder.typicode.com/posts';
+//         let res = fetch(api);
+//         console.log("*****************  ",res)
+//         if(res.status === 200){
+//             setTimeout(()=>{
+//                 resolve(res);
+//             })
+//         }else{
+//             reject('data not found!!');
+//         }
+        
+        
+//     })
+//     return promise1;
+// }
+
+// let obj1 = pro();
+// obj1.then((data)=>{
+//     console.log(data)
+// })
+
+
+
+
+// let pro1 = new Promise((resolve, reject)=>{
+//     let data ;
+//     if(data){
+//         resolve(data);
+//     }else{
+//         reject('Error');
+//     }
+// })
+// console.log(pro1);
+// pro1.then((res)=>{
+//     console.log(res);
+// }).catch((error)=>{
+//     console.log(error);
+// })
+
+
+
+// let pro1 = new Promise((resolve, reject)=>{
+//     fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then((res)=>{
+//         if(res.status===200){
+//             console.log('success')
+//             resolve(res);
+//         }else{
+//             reject('Error!!  data not found');
+//         }
+//     })
+//     .catch((error)=>{
+//         reject(error);
+//     })
+    
+// })
+// pro1.then((res)=>{
+//     console.log(res);
+// }).catch((error)=>{
+//     console.log(error);
+// })
+
+
+
+// const myfun = (url1)=>{
+//     return new Promise((resolve,reject)=>{
+//         fetch(url1)
+//         .then((res)=>{
+//             if(res.ok){
+//                 resolve(res);
+//             }
+//             else{
+//                 reject('Error');
+//             }
+//         })
+//         .catch((error)=>{
+//             reject(error);
+//         })
+//     })
+// }
+
+// let myPro = myfun('https://jsonplaceholder.typicode.com/posts');
+// myPro.then((res)=>console.log(res)).catch((err)=>console.log(err));
+
+
+
+// const myfun = (arr) =>{
+//     let promises = arr.map((url1)=>{
+//         return new Promise((resolve, reject)=>{
+//             fetch(url1)
+//             .then((response)=>{
+//                 if(response.status === 200){
+//                     resolve(response)
+//                 }else{
+//                     reject('Error');
+//                 }
+//             })
+//             .catch((err)=>{
+//                 reject(err);
+//             })
+//         }) 
+//     })
+//     return Promise.all(promises);
+// }
+
+// const arr = ['https://jsonplaceholder.typicode.com/posts/1',
+//             'https://jsonplaceholder.typicode.com/posts/2',
+//             'https://jsonplaceholder.typicode.com/posts/3',
+//             'https://jsonplaceholder.typicode.com/posts/4'
+//         ];
+// let pomise_list = myfun(arr);
+// console.log(pomise_list);
+
+
+
+// const getPromise = () =>{
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
+//             console.log('data find')
+//             resolve('success')
+//         },3000);
+        
+//     })
+// }
+
+// let pro = getPromise();
+// console.log(pro);
