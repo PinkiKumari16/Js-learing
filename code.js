@@ -1551,13 +1551,27 @@
 
 
 
-let age =Symbol();
-const obj = {
-    name: 'Pinki',
-    class: 'Gradute',
-    [age]: 21
-}
+// let age =Symbol();
+// const obj = {
+//     name: 'Pinki',
+//     class: 'Gradute',
+//     [age]: 21
+// }
 
-console.log(obj);
+// console.log(obj);
+
+
+////  *****************  BOM  **************************
+function showHeightSize(){
+    console.clear()
+    var iHeight = window.innerHeight;
+    console.log("inner Height: ",iHeight);  
+    var oHeight = window.outerHeight;
+    console.log('outer height: ',oHeight);
+    let iWidth = window.innerWidth;
+    console.log("inner Width: ",iWidth);
+    let oWidth = window.outerWidth;
+    console.log('Outer width: ',oWidth);
+}
 
 
