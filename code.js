@@ -1626,3 +1626,44 @@ let resizeBrowser = () => {
 let scrollBrowser = () =>{
     window.scrollBy(0,40)
 }
+
+
+// //// *******  to see the imformation of address bar.
+// console.log(location.hash);
+// console.log(location.host);
+// console.log(location.hostname);
+// console.log(location.href);
+// console.log(location.origin);
+// console.log(location.pathname);
+// console.log(location.port);
+// console.log(location.protocol);
+// console.log(location.search);
+
+function setLocation(){
+    // location.href = 'https://github.com/PinkiKumari16';
+    location.assign('https://github.com/PinkiKumari16');
+    // location.replace('https://github.com/PinkiKumari16');
+    // location.reload();
+}
+
+// let goBack = () => {
+//     history.back();
+// }
+
+// let goForward = () => {
+//     history.forward();
+// }
+
+
+let go = () => {
+    history.go(1);
+}
+
+window.addEventListener('scroll',()=>{
+    console.log(window.pageYOffset);
+    console.log(window.pageXOffset);
+})
+
+let pinkBox = document.querySelector('#testDiv');
+console.log(pinkBox.offsetTop);
+console.log(pinkBox.offsetLeft);
