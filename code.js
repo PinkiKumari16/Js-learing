@@ -1586,16 +1586,16 @@
 
 
 
-var myWindow;
-let openBrowser = () =>{
-    myWindow = window.open('https://github.com/PinkiKumari16','','height=500px,width=500px,top=50px,left=30px');
-    myWindow.document.write('<h1>Hello Pinki.</h1>');
-    myWindow.focus()
-}
+// var myWindow;
+// let openBrowser = () =>{
+//     myWindow = window.open('https://github.com/PinkiKumari16','','height=500px,width=500px,top=50px,left=30px');
+//     myWindow.document.write('<h1>Hello Pinki.</h1>');
+//     myWindow.focus()
+// }
 
-let closeBrowser = () =>{
-    myWindow.close();
-}
+// let closeBrowser = () =>{
+//     myWindow.close();
+// }
 
 // let moveBrowser = () =>{
 //     myWindow.moveTo(400,100);
@@ -1603,29 +1603,29 @@ let closeBrowser = () =>{
 
 // }
 
-let moveBrowser = () =>{
-    myWindow.moveBy(100,100)
-    myWindow.focus();
-}
+// let moveBrowser = () =>{
+//     myWindow.moveBy(100,100)
+//     myWindow.focus();
+// }
  
 // let resizeBrowser = () => {
 //     myWindow.resizeTo(400,400)
 //     myWindow.focus();
 // }
 
-let resizeBrowser = () => {
-    myWindow.resizeBy(200,200)
-    myWindow.focus();
-}
+// let resizeBrowser = () => {
+//     myWindow.resizeBy(200,200)
+//     myWindow.focus();
+// }
 
 
 // let scrollBrowser = () =>{
 //     window.scrollTo(0,40)
 // }
 
-let scrollBrowser = () =>{
-    window.scrollBy(0,40)
-}
+// let scrollBrowser = () =>{
+//     window.scrollBy(0,40)
+// }
 
 
 // //// *******  to see the imformation of address bar.
@@ -1639,12 +1639,12 @@ let scrollBrowser = () =>{
 // console.log(location.protocol);
 // console.log(location.search);
 
-function setLocation(){
-    // location.href = 'https://github.com/PinkiKumari16';
-    location.assign('https://github.com/PinkiKumari16');
-    // location.replace('https://github.com/PinkiKumari16');
-    // location.reload();
-}
+// function setLocation(){
+//     // location.href = 'https://github.com/PinkiKumari16';
+//     location.assign('https://github.com/PinkiKumari16');
+//     // location.replace('https://github.com/PinkiKumari16');
+//     // location.reload();
+// }
 
 // let goBack = () => {
 //     history.back();
@@ -1655,15 +1655,38 @@ function setLocation(){
 // }
 
 
-let go = () => {
-    history.go(1);
-}
+// let go = () => {
+//     history.go(1);
+// }
 
-window.addEventListener('scroll',()=>{
-    console.log(window.pageYOffset);
-    console.log(window.pageXOffset);
-})
+// window.addEventListener('scroll',()=>{
+//     console.log(window.pageYOffset);
+//     console.log(window.pageXOffset);
+// })
 
-let pinkBox = document.querySelector('#testDiv');
-console.log(pinkBox.offsetTop);
-console.log(pinkBox.offsetLeft);
+// let pinkBox = document.querySelector('#testDiv');
+// console.log(pinkBox.offsetTop);
+// console.log(pinkBox.offsetLeft);
+
+
+// let box = document.querySelector('#testDiv');
+// let sHeight = box.scrollHeight;
+// let sWidth = box.scrollWidth;
+// console.log(sHeight,sWidth);
+// let divHeight = box.offsetHeight;
+// let divWidth = box.offsetWidth;
+// console.log(divHeight, divWidth);
+
+
+// document.addEventListener('mousemove',(ele)=>{
+//     console.clear();
+//     let a = ele.clientX;
+//     let b = ele.clientY;
+//     console.log(a,b);
+//     let x = ele.pageX;
+//     let y = ele.pageY;
+//     console.log(x,y);
+// })
+
+
+

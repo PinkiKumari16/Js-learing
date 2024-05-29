@@ -35,11 +35,16 @@
 
 
 #testDiv{
-    height: 10rem;
-    width: 10rem;
-    background-color: rgb(230, 58, 158);
+    height: 15rem;
+    width: 500px;
+    background-color: rgb(253, 81, 210);
+    overflow: auto;
 }
-
+#innerBox{
+    width: 600px;
+    background-color: #5353fc;
+    height: 2em;
+}
 .box{
     margin: 1em;
     display: flex;
