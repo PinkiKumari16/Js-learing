@@ -1586,32 +1586,32 @@
 
 
 
-// var myWindow;
-// let openBrowser = () =>{
-//     myWindow = window.open('https://github.com/PinkiKumari16','','height=500px,width=500px,top=50px,left=30px');
-//     myWindow.document.write('<h1>Hello Pinki.</h1>');
-//     myWindow.focus()
-// }
+var myWindow;
+let openBrowser = () =>{
+    myWindow = window.open('https://github.com/PinkiKumari16','','height=500px,width=500px,top=50px,left=30px');
+    myWindow.document.write('<h1>Hello Pinki.</h1>');
+    myWindow.focus()
+}
 
-// let closeBrowser = () =>{
-//     myWindow.close();
-// }
+let closeBrowser = () =>{
+    myWindow.close();
+}
 
-// let moveBrowser = () =>{
-//     myWindow.moveTo(400,100);
-//     myWindow.focus();
+let moveBrowser = () =>{
+    myWindow.moveTo(400,100);
+    myWindow.focus();
 
-// }
+}
 
 // let moveBrowser = () =>{
 //     myWindow.moveBy(100,100)
 //     myWindow.focus();
 // }
  
-// let resizeBrowser = () => {
-//     myWindow.resizeTo(400,400)
-//     myWindow.focus();
-// }
+let resizeBrowser = () => {
+    myWindow.resizeTo(400,400)
+    myWindow.focus();
+}
 
 // let resizeBrowser = () => {
 //     myWindow.resizeBy(200,200)
@@ -1623,9 +1623,9 @@
 //     window.scrollTo(0,40)
 // }
 
-// let scrollBrowser = () =>{
-//     window.scrollBy(0,40)
-// }
+let scrollBrowser = () =>{
+    window.scrollBy(0,40)
+}
 
 
 // //// *******  to see the imformation of address bar.
@@ -1688,5 +1688,11 @@
 //     console.log(x,y);
 // })
 
-
+// let b = [1,2,3,4,5,6,7,8,9,10];
+// for(let i=0; i<10; i++){
+//     setTimeout(()=>console.log(b[i]),1000);
+// }
+// for(var i=0; i<10; i++){
+//     setTimeout(()=>console.log(b[i]),1000);
+// }
 
